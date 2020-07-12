@@ -2,22 +2,28 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-theme-blog`,
-      options: {},
+      options: {
+        basePath:'/blog'
+      },
     },
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `My Blog Title`,
-    author: `My Name`,
-    description: `My site description...`,
+    title: `Bits and pieces`,
+    author: `Amrithnath`,
+    description: `This is my own tiny place on the netverse :D`,
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/gatsbyjs`,
+        url: `https://twitter.com/arjunamrith`,
       },
       {
         name: `github`,
-        url: `https://github.com/gatsbyjs`,
+        url: `https://github.com/amrithnath`,
+      },
+      {
+        name: `github`,
+        url: `https://github.com/arjunamrith`,
       },
     ],
   },
