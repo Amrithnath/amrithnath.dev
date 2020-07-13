@@ -6,6 +6,24 @@ module.exports = {
         basePath:'/blog'
       },
     },
+    'gatsby-theme-blog-darkmode',
+    {
+      resolve:`gatsby-plugin-offline`,
+      options:{
+        globPatterns: ['**/*']
+      }
+    },
+    {
+      resolve:`gatsby-plugin-manifest`,
+      options:{
+        icon:'src/images/gatsby-icon.png',
+        name:'Bits and pieces',
+        short_name:'B&P',
+        start_url:'/',
+        background_color:`#777777`,
+        display:'minimal-ui',
+      }
+    }
   ],
   // Customize your site metadata:
   siteMetadata: {

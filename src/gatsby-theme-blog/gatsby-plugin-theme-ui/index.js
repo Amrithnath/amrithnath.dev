@@ -1,3 +1,5 @@
+import merge from "deepmerge"
+import defaultThemeColors from "gatsby-theme-blog/src/gatsby-plugin-theme-ui/colors"
 /*
  * Want to change your theme colors?
  * Try uncommenting the color overrides below
@@ -10,7 +12,7 @@ const blueGray = `#282c35`
 const background = `#EDEDED`
 const db = `#777777`
 
-export default {
+export default merge(defaultThemeColors,{
     colors: {
         text: blueGray,
         primary: darkBlue,
@@ -23,4 +25,4 @@ export default {
             background:db,
         }
     },
-}
+})
